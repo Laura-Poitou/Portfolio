@@ -1,0 +1,948 @@
+
+
+body{
+    width: 100%;
+    font-family: 'Sora', sans-serif;
+    background-color : rgba(180, 86, 63, 0.07) ;
+}
+
+
+.navContainer, 
+.mainContainer {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding-top: 0.5rem;
+    padding-left: 0;
+    padding-right: 0.5rem;
+    margin: 0;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+
+}
+
+nav ul li {
+    margin: 0.2rem;
+}
+
+.lienNav {
+    color: rgb(134, 130, 184);
+    text-decoration: none;
+    font-weight: bold;
+
+    display: inline-block;
+    position: relative;
+}
+
+.selected {
+    color: rgb(208, 54, 143);
+    text-decoration: none;
+    font-weight: bold;
+
+    display: inline-block;
+    position: relative;
+}
+
+.lienNav:after {
+    content: "";
+    display: block;
+    height: 0.2rem;
+    left: 50%;
+    position: absolute;
+    background: rgb(208, 54, 143);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.lienNav:hover:after {
+    width: 100%; 
+    left: 0;
+}
+
+.lienNav:hover {
+    color: rgb(208, 54, 143);
+    text-underline-offset: 0.3rem;
+    font-weight: bold;
+}
+
+main{
+    background-color: rgb(103, 191, 169);
+    background-size: cover;
+    margin-top: 1rem;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.twoPart{
+    display: flex;
+    width: 100%;
+}
+
+.leftPart {
+    width: 75%;
+}
+
+.rightPart{
+    position: relative;
+    width: 25%;
+}
+
+.rightPart img {
+    width : 35rem;
+    position: absolute;
+    right: -1rem;
+    top: -13rem;
+}
+
+main h1 {
+    color :rgb(246, 200, 70);
+    margin: 0;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.leftPart h2 {
+    color :rgb(65,38,100);
+    padding: 0;
+    
+}
+
+.leftPart h2 strong{
+    color:rgb(146,225,255);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.leftPart h2 em{
+    font-size: 1.5rem;
+    font-style: italic;
+
+}
+
+.leftPart .h2Part1 {
+    margin-bottom: 2.5rem;
+}
+
+.leftPart .h2Part2 {
+    color :rgb(246, 200, 70);
+    margin-bottom: 2.5rem;
+}
+
+.leftPart .h2Part3 {
+    margin-bottom: 2.5rem;
+}
+
+
+.leftPart h3 {
+    background-color: rgb(208, 54, 143);
+    color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    width: 7rem;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.35rem;
+    
+}
+
+.leftPart h3:hover {
+    animation: pulse 1s infinite;
+    animation-timing-function: linear; 
+}
+
+.leftPart a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1);}
+    100% { transform: scale(1); }
+    }
+
+
+.socialMedia {
+    display: flex;
+    justify-content: space-between;
+    width: 5rem;
+    margin-left: 1rem;
+}
+
+.socialMedia i:hover{
+    animation: pulse_img 1s infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes pulse_img {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4);}
+    100% { transform: scale(1); }
+    }
+
+.socialMedia i {
+    font-size: 1.5rem;
+    color: rgb(0,0,0);
+}
+
+/************************************************************/
+
+
+/* ************ */
+   /* A propos */
+/* ************ */
+
+
+footer {
+    width: 100%;
+    height: 12%;
+    background-color: rgb(134,130,184);
+}
+
+footer i {
+    text-decoration: none;
+    color: rgb(51, 30, 78);
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+ footer a {
+    border: 2px solid rgb(65,38,100);
+    border-radius: 30px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+ }
+
+ .footersocialMedia{
+    display: flex;
+    width : 100%;
+    justify-content: center;
+ }
+
+ .footerContainer{
+    text-align: center;
+    width: 100%;
+    font-size: 0.8rem;
+ }
+
+.proposContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.resume  {
+    display: flex;
+    width: 95%;
+}
+
+.decorationResume{
+    width: 25rem;
+    height: 25rem;
+    background-color: rgb(103,191,169, 0.753);
+    border-radius: 10% 25%;
+    box-shadow: 40px -10px rgba(0, 128, 128, 0.753);
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 8rem;
+}
+
+.presentationImg {
+    width: 17rem;
+    position: relative;
+    top: 4rem;
+    border-radius: 10%;
+}
+
+.textResume{
+    width: 36%;
+    padding-top: 3.5rem;
+}
+
+.textResume h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color:rgb(180,86,63)
+}
+
+.textResume p {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.textResume p a {
+    text-decoration: none;
+    color: rgb(134, 130, 184);
+}
+
+.textResume p a:hover {
+    color: rgb(208,54,143);
+    font-weight: bold;
+
+}
+
+
+
+
+/************************************************************/
+
+
+/* ************ */
+   /*Parcours*/
+/* ************ */
+
+.parcoursContainer {
+    width:100%;
+    display: flex;
+}
+
+.navAside {
+    width: 20%;
+}
+
+.navAside ul {
+    list-style-type: none;
+}
+
+.parcoursContent {
+    width: 80%;
+}
+
+
+.parcoursContent h1 {
+    display:flex;
+    color: rgb(180,86,63);
+  }
+
+.parcoursContent h1::before,
+.parcoursContent h1::after {
+    content:"";
+    flex:1 1;
+    background:rgb(246,200,70);
+    height:1px;
+    align-self: center;
+    margin: 0 10px 0 0;
+  }
+  
+.parcoursContent h1::after {
+    margin: 0 0 0 10px;
+  }
+
+
+.navAside{
+    position: fixed;
+}
+
+.parcoursContent{
+    position: relative;
+    left: 18rem;
+}
+.navAside a {
+    text-decoration: none;
+    color: rgb(103,191,169);
+}
+
+.navAside a:hover {
+    text-decoration: none;
+    color: rgb(51,116,81);
+}
+
+#expText h4{
+    color:rgb(65,38,100);
+}
+
+#expText blockquote{
+    text-align: justify;
+    font-size: 0.8rem;
+    color: rgb(109, 114, 113);
+    overflow-y: scroll;
+    height: 8rem;
+}
+
+#expText h5{
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color: rgb(103,191,169);
+}
+
+#expText p a {
+    text-decoration: none;
+    color: rgb(238, 180, 23); 
+}
+
+#expText p a:hover {
+    color: rgb(180,86,63);
+    font-weight: bold;
+
+}
+
+#expText p #projetEDIFICE{
+    text-decoration: none;
+    color: rgb(109, 114, 113);
+    font-size: 0.7rem;
+}
+
+#expText p #projetEDIFICE:hover{
+    color: rgb(5, 5, 4);
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+#formText strong{
+    color: rgb(103,191,169);
+    font-weight: bold;
+}
+
+#formText h4{
+    color:rgb(65,38,100);
+}
+
+
+#educationText strong{
+    color: rgb(103,191,169);
+    font-weight: bold;
+}
+
+#educationText em{
+    color: rgb(134,130,184);
+    font-style: normal;
+    font-weight: bolder;
+}
+
+#educationText p a {
+    text-decoration: none;
+    color: rgb(238, 180, 23);
+}
+
+#educationText p a:hover {
+    color: rgb(180,86,63);
+    font-weight: bold;
+
+}
+
+
+.LMDContainer{
+    text-align: center;
+}
+
+.LMD{
+    width: 35rem;
+}
+
+
+/************************************************************/
+
+ /* ************ */
+   /*Competence*/
+/* ************ */
+
+.competences {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.competenceContainer {
+    width: 75%;
+    margin-bottom: 1rem;
+}
+
+
+.competenceIntroduction h1 {
+    color: rgb(180,86,63);
+    font-size: 1.6rem;
+}
+
+.competenceContent {
+    margin-top: 1.5rem;
+}
+
+
+.competenceContent h2 {
+    color: #f5b20b;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.competenceContent .elements ul {
+    list-style-type: none;
+}
+
+
+/************************************************************/
+
+ /* ************ */
+   /*Projet*/
+/* ************ */
+
+.project {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectContainer {
+    width: 75%;
+    margin-bottom: 1rem;  
+}
+
+.projectIntroduction h1 {
+    color: rgb(180,86,63);
+    font-size: 1.6rem;
+}
+
+.color_mixing,
+.our_journey {
+    margin-top: 1.5rem;
+}
+
+.presentationContainer h2 {
+    color: #f5b20b;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.presentationElements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.presentationElements p {
+    width: 60%;
+    align-self: center;
+}
+
+.color_mixing_miniature,
+.our_journey_miniature {
+    width: 30%;
+}
+
+.projectLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.2rem;
+}
+
+.lienProjet {
+    text-decoration: none;
+    background-color: rgb(103,191,169);
+    color:#fff;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+    padding: 0.35rem;
+    margin-bottom: 0.75rem;
+
+}
+
+
+/************************************************************/
+
+ /* ************ */
+   /*Media*/
+/* ************ */
+
+/*En dessous de 1100px */
+@media (max-width: 1100px) {
+    .textResume{
+        width: 36%;
+        padding-top: 0rem;
+    }
+
+    .compContentContainer {
+        width:100%;
+        display: block;
+    }
+
+    .hardSkills,
+    .softSkills {
+        margin: 0.5rem;
+    }
+}
+
+
+/*En dessous de 945px */
+@media (max-width: 945px) {
+    .decorationResume{
+        width: 20rem;
+        height: 20rem;
+        background-color: rgb(103,191,169, 0.753);
+        border-radius: 10% 25%;
+        box-shadow: 40px -10px rgba(0, 128, 128, 0.753);
+        text-align: center;
+        margin-left: 2rem;
+        margin-right: 6rem;
+    }
+    
+    .presentationImg {
+        width: 15rem;
+        position: relative;
+        top: 2rem;
+        border-radius: 10%;
+    }   
+
+    .navAside{
+        display: none;
+    }
+
+    .parcoursContent{
+        position: relative;
+        left: 1rem;
+    }
+}
+
+
+
+/*En dessous de 800px */
+@media (max-width: 800px) {
+    .rightPart img {
+        width: 20rem;
+        position: absolute;
+        right: -1rem;
+        top: -7rem;
+    }
+
+   
+    .resume  {
+        display: block;
+    } 
+
+    .textResume{
+        width: 90%;
+        padding-top: 0rem;
+    }
+
+    .decorationResume{
+        width: 20rem;
+        height: 20rem;
+        background-color: rgb(103,191,169, 0.753);
+        border-radius: 10% 25%;
+        box-shadow: 40px -10px rgba(0, 128, 128, 0.753);
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: 8rem;
+        margin-right: 6rem;
+    }
+
+    
+}
+
+/*En dessous de 650px */
+@media (max-width: 650px) {
+    .element img {
+        width: 25rem;
+    }
+
+    .color_mixing_miniature,
+    .our_journey_miniature {
+        display: none;
+    }
+}
+
+
+
+/*En dessous de 640px */
+@media (max-width: 640px) {
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1rem;
+    }
+
+    .rightPart img {
+        width: 15rem;
+        position: absolute;
+        right: -1rem;
+        top: -1rem;
+    }
+
+    main h1 {
+        color :rgb(246, 200, 70);
+        margin: 0;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    article div h1 {
+        font-size: 1.2rem;
+    }
+
+    article div h4 {
+        font-size: 0.9rem;
+    }
+
+    article p {
+        font-size: 0.9rem;
+    }
+
+    .hardSkillsThead tr th,
+    .softSkillsThead tr th,
+    tr .element,
+    tr .subtitle {
+        font-size: 0.9rem;
+    }
+    
+}
+
+/*En dessous de 600px */
+@media (max-width: 600px) {
+    .LMDContainer .LMD{
+        width: 25rem;
+    }
+}
+
+
+/*En dessous de 580px */
+@media (max-width: 580px) {
+    .rightPart img {
+        width : 10rem;
+        top: -1rem;
+    }
+
+    main h1 {
+        color :rgb(246, 200, 70);
+        margin: 0;
+        font-size: 2rem;
+    }
+    
+        
+    .leftPart h2 strong{
+        color:rgb(146,225,255);
+        font-size: 1.5rem;
+    }
+    
+    .leftPart h2 em{
+        font-size: 1rem;
+        font-style: italic;
+    
+    }
+
+    .leftPart .h2Part1 {
+        margin-bottom: 0rem;
+    }
+
+    .leftPart .h2Part2 {
+        color: rgb(246, 200, 70);
+        margin-bottom: 0rem;
+    }
+
+    .leftPart h3 {
+        background-color: rgb(208, 54, 143);
+        color: rgb(255, 255, 255);
+        border-radius: 0.5rem;
+        width: 5rem;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0.35rem;
+        
+    }
+
+    .socialMedia {
+        margin-left: 0rem;
+    }
+
+    .socialMedia i {
+        font-size: 1rem;
+    }
+
+    .decorationResume{
+        width: 20rem;
+        height: 20rem;
+        background-color: rgb(103,191,169, 0.753);
+        border-radius: 10% 25%;
+        box-shadow: 0px 0px rgba(0, 128, 128, 0.753);
+        text-align: center;
+        margin-left: 1rem;
+        margin-right: 6rem;
+    }
+}
+
+
+/*En dessous de 475px */
+@media (max-width: 475px) {
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+        font-size: 0.6rem;
+        flex-wrap: wrap;
+    
+    }
+    
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    .leftPart h2 strong{
+        color:rgb(146,225,255);
+        font-size: 1rem;
+    }
+    
+    .leftPart h2 em{
+        font-size: 1rem;
+        font-style: italic;
+    
+    }
+
+    .leftPart h3 {
+        background-color: rgb(208, 54, 143);
+        color: rgb(255, 255, 255);
+        border-radius: 0.5rem;
+        width: 3rem;
+        text-align: center;
+        font-size: 0.6rem;
+        padding: 0.35rem;
+        
+    }
+
+    .decorationResume{
+        display: none;
+    }
+
+    .textResume{
+        width: 90%;
+        padding-top: 0rem;
+    }
+
+    .textResume h1 {
+        font-size: 1rem;
+        font-weight: bold;
+        color:rgb(180,86,63)
+    }
+    
+    .textResume p {
+        font-size: 0.8rem;
+        font-style: italic;
+    }
+
+    footer i {
+        text-decoration: none;
+        color: rgb(51, 30, 78);
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+     footer p {
+        font-size: 0.6rem;
+     }
+
+    article div h1 {
+        font-size: 0.9rem;
+    }
+
+    article div h4 {
+        font-size: 0.7rem;
+    }
+
+    article div p {
+        font-size: 0.7rem;
+    }
+
+    #expText h5 {
+        font-size: 0.6rem;
+    }
+
+    #educationText ul {
+        font-size: 0.7rem;
+    }
+
+    #formText ul,
+    #formText p {
+        font-size: 0.7rem;
+    }
+
+    .element img {
+        width: 10rem;
+    }
+
+    .hardSkillsThead tr th,
+    .softSkillsThead tr th,
+    tr .element,
+    tr .subtitle {
+        font-size: 0.6rem;
+    }
+
+}
+
+
+
+
+
+
+/*En dessous de 363px */
+@media (max-width: 363px) {
+    .rightPart img {
+        width : 7rem;
+        top: 3rem;
+    }
+
+    article blockquote {
+        display: none;
+    }
+}
+
+
+
+
+
+/*En dessous de 319px */
+@media (max-width: 319px) {
+    .rightPart img {
+        width : 0rem;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+        font-size: 0.6rem;
+        flex-wrap: wrap;
+    
+    }
+
+    main h1 {
+        font-size: 1rem;
+    }
+
+    .leftPart h2 strong {
+        color: rgb(146,225,255);
+        font-size: 0.8rem;
+    }
+
+    .leftPart h2 em {
+        font-size: 0.6rem;
+        font-style: italic;
+    }
+
+    .leftPart h3 {
+        background-color: rgb(208, 54, 143);
+        color: rgb(255, 255, 255);
+        border-radius: 0.5rem;
+        width: 2.9rem;
+        text-align: center;
+        font-size: 0.5rem;
+        padding: 0.35rem;
+    }
+
+
+}
+
